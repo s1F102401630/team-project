@@ -56,21 +56,23 @@ body {
 
 .content > .title {
 	text-align: center;
-	margin-bottom: 40px;
 }
 
-.content > .event {
+.content > .events {
+	margin: 50px 0px;
+}
+.content > .events > .event {
 	display: flex;
 	height: 100px;
 }
-.content > .event:nth-child(4n+2) {
+.content > .events > .event:nth-of-type() {
 	justify-content: left;
 }
-.content > .event:nth-child(4n+4) {
+.content > .events > .event:nth-of-type(4n+3) {
 	justify-content: right;
 }
 
-.content > .event > .circle {
+.content > .events > .event > .circle {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -79,7 +81,7 @@ body {
 	border-radius: 50%;
 	background-color: var(--team-primary-color);
 }
-.content > .event > .circle > span {
+.content > .events > .event > .circle > span {
 	display: inline-block;
 	position: relative;
 	left: 50%;
@@ -89,27 +91,33 @@ body {
 	font-size: 2.0em;
 	color: #FFFFFF;
 }
-.content > .event > .description {
+.content > .events > .event > .description {
+	width: 200px;
 	display: flex;
 	position: relative;
 	align-items: center;
 	font-weight: bold;
 }
-.content > .event:nth-child(4n+2) > .description {
+.content > .events > .event:nth-of-type(4n+1) > .description {
+	justify-content: left;
 	left: calc((50% + 50px + 25px) * +1);
 }
-.content > .event:nth-child(4n+4) > .description {
+.content > .events > .event:nth-of-type(4n+3) > .description {
+	justify-content: right;
 	left: calc((50% + 50px + 25px) * -1);
 }
 
-.content > .event-connecter {
+.content > .events > .event-connecter {
 	display: block;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 10px;
+	width: 7.5px;
 	height: 100px;
-	background-color: var(--team-primary-color);
+	background: var(--team-primary-color);
+}
+.content > .events > .event-connecter.interrupted {
+	background: linear-gradient(180deg, #FF0000, #FFFFFF);
 }
 
 .footer {
