@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "NFL Seattle Seahawks Flat";
+	src: url("./fonts/NFL_Seattle_Seahawks_Flat[1].ttf") format("truetype");
+}
+
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -38,6 +43,11 @@ body {
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: bold;
+}
+
+.content .year {
+	font-family: "NFL Seattle Seahawks Flat";
+	font-size: 1.5em;
 }
 
 .footer {
