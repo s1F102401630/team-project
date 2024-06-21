@@ -93,7 +93,7 @@ body {
 	display: flex;
 	height: 100px;
 }
-.content > .events > .event:nth-of-type() {
+.content > .events > .event:nth-of-type(4n+1) {
 	justify-content: left;
 }
 .content > .events > .event:nth-of-type(4n+3) {
