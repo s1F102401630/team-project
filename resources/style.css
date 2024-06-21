@@ -145,5 +145,5 @@ body {
 	background: var(--team-primary-color);
 }
 .content > .events > .event-connecter.interrupted {
-	background: linear-gradient(180deg, #FF0000, #FFFFFF);
+	background: linear-gradient(180deg, var(--team-primary-color), transparent);
 }
