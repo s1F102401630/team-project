@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @font-face {
 	font-family: "NFL Seattle Seahawks Flat";
-	src: url("./fonts/NFL_Seattle_Seahawks_Flat/NFL_Seattle_Seahawks_Flat[1].ttf") format("truetype");
+	src: url("./resources/fonts/NFL_Seattle_Seahawks_Flat/NFL_Seattle_Seahawks_Flat[1].ttf") format("truetype");
 }
 
 body {
