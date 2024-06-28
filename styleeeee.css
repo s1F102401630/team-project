@@ -11,13 +11,80 @@ body {
 .header, .content, .footer {
     background: rgba(0, 0, 0, 0.6); /* 背景を半透明にすることでテキストが読みやすくなります */
     padding: 20px;
-    border-radius: 10
+    border-radius: 10px;
+    margin: 20px;
+}
 
+.pages {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.page {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s;
+}
+
+.page:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.page.selected {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.description {
+    max-width: 600px;
+}
+
+.event-connecter {
+    width: 2px;
+    height: 20px;
+    background: white;
+}
+
+.interrupted {
+    background: rgba(255, 0, 0, 0.8);
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @font-face {
 	font-family: "NFL Seattle Seahawks Flat";
-	src: url("./resources/fonts/NFL_Seattle_Seahawks_Flat/NFL_Seattle_Seahawks_Flat[1].ttf") format("truetype");
+	src: url("./fonts/NFL_Seattle_Seahawks_Flat/NFL_Seattle_Seahawks_Flat[1].ttf") format("truetype");
 }
 
 body {
