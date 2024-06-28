@@ -86,6 +86,38 @@ body {
 	text-align: center;
 }
 
+.content > .field > .group {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.content > .field > .group > .type {
+	font-family: "NFL Seattle Seahawks Flat";
+	font-size: 3.0em;
+	text-align: center;
+}
+
+
+.content > .field > .group > .players {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	gap: 30px 100px;
+}
+.content > .field > .group > .players > .player > img {
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 300px;
+	border-radius: 20px;
+}
+.content > .field > .group > .players > .player > .name {
+	display: block;
+	margin-top: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
 .content > .events {
 	margin: 50px 0px;
 }
