@@ -31,6 +31,14 @@ body {
 	bottom: 0px;
 }
 
+.header > .logo {
+	position: absolute;
+	height: 50px;
+}
+.header > .logo > img {
+	padding: 5%;
+	height: 90%;
+}
 .header > .pages {
 	display: flex;
 	position: relative;
