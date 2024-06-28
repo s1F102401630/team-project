@@ -94,96 +94,99 @@ body {
 	text-align: center;
 }
 
-.content > .field > .group {
-	width: 100%;
+.content .field > .group {
+	margin: auto;
+	width: 80%;
 	margin-bottom: 50px;
 }
-.content > .field > .group > .type {
+.content .field > .group > .type {
 	font-family: "NFL Seattle Seahawks Flat";
-	font-size: 3.0em;
+	font-size: 4.0em;
 	text-align: center;
 }
 
 
-.content > .field > .group > .players {
+.content .field > .group > .players {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 30px;
 	gap: 30px 100px;
 }
-.content > .field > .group > .players > .player > img {
+.content .field > .group > .players > .player > img {
 	display: block;
 	margin: auto;
-	width: 200px;
-	height: 300px;
+	width: 300px;
+	height: 400px;
 	border-radius: 20px;
 }
-.content > .field > .group > .players > .player > .name {
+.content .field > .group > .players > .player > .name {
 	display: block;
 	margin-top: 15px;
+	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
 }
 
-.content > .events {
+.content .events {
 	margin: 50px 0px;
 }
-.content > .events > .event {
+.content .events > .event {
 	display: flex;
-	height: 100px;
+	height: 200px;
 }
-.content > .events > .event:nth-of-type(4n+1) {
+.content .events > .event:nth-of-type(4n+1) {
 	justify-content: left;
 }
-.content > .events > .event:nth-of-type(4n+3) {
+.content .events > .event:nth-of-type(4n+3) {
 	justify-content: right;
 }
 
-.content > .events > .event > .circle {
+.content .events > .event > .circle {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	background-color: var(--team-primary-color);
 }
-.content > .events > .event > .circle > span {
+.content .events > .event > .circle > span {
 	display: inline-block;
 	position: relative;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	font-family: "NFL Seattle Seahawks Flat";
-	font-size: 2.0em;
+	font-size: 4.0em;
 	color: #FFFFFF;
 }
-.content > .events > .event > .description {
+.content .events > .event > .description {
 	display: flex;
 	position: relative;
-	width: 200px;
+	width: 400px;
 	align-items: center;
+	font-size: 1.5em;
 	font-weight: bold;
 }
-.content > .events > .event:nth-of-type(4n+1) > .description {
+.content .events > .event:nth-of-type(4n+1) > .description {
 	justify-content: left;
-	left: calc((50% + 50px + 25px) * +1);
+	left: calc((50% + 100px + 50px) * +1);
 }
-.content > .events > .event:nth-of-type(4n+3) > .description {
+.content .events > .event:nth-of-type(4n+3) > .description {
 	justify-content: right;
-	left: calc((50% + 50px + 25px) * -1);
+	left: calc((50% + 100px + 50px) * -1);
 }
 
-.content > .events > .event-connecter {
+.content .events > .event-connecter {
 	display: block;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 7.5px;
+	width: 15px;
 	height: 100px;
 	background: var(--team-primary-color);
 }
-.content > .events > .event-connecter.interrupted {
+.content .events > .event-connecter.interrupted {
 	background: linear-gradient(180deg, var(--team-primary-color), transparent);
 }
